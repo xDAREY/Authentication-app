@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Authentication-app</string>
+    <string name="header2">Login</string>
+    <string name="paragraph3i">Fill in your login details correctly</string>
+    <string name="username">Username</string>
+    <string name="hintUsername">enter your username</string>
+    <string name="hintUsernamei">Email or username</string>
+    <string name="LoginPassword">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_account">create account</string>
+    <string name="Login">LOGIN</string>
+    <string name="forgot">forgot password?</string>
 </resources>

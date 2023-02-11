@@ -6,4 +6,172 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="30dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/header2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/paragraph3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:text="@string/paragraph3i"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/paragraph3"
+            android:layout_marginBottom="-55dp"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingStart="6dp"/>
+
+        <EditText
+            android:id="@+id/inputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-50dp"
+            android:background="@drawable/input_box"
+            android:hint="@string/hintUsernamei"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/loginPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/inputUsername"
+            android:layout_marginBottom="-50dp"
+            android:text="@string/LoginPassword"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingStart="6dp"
+            android:paddingBottom="10sp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/loginPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-43dp"
+            android:background="@drawable/input_box"
+            app:passwordToggleEnabled="true"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:paddingVertical="2dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/inputPassword"
+            android:layout_alignBottom="@id/inputPassword"
+            android:layout_marginBottom="-30dp"
+            android:text="@string/forgot"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+
+        <Button
+            android:id="@+id/loginBtn2"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/Login"
+            android:layout_alignBottom="@id/forgotPass"
+            android:layout_marginBottom="-285dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/loginBtn2"
+            android:layout_marginBottom="-40dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="-40dp" />
+
+
+<!--            <androidx.legacy.widget.Space-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="1dp" />-->
+
+            <TextView
+                android:id="@+id/createAccTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#FF1100"
+                android:text="@string/create_account" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
