@@ -20,4 +20,7 @@
     <string name="paragraph2">to create an account</string>
     <string name="hintEmail">enter your email</string>
     <string name="hintPhoneNo">enter your phone number</string>
+    <string name="greeting1">Hi there!</string>
+    <string name="greeting2">welcome to my authentication app</string>
+    <string name="signUp">SIGN UP</string>
 </resources>
