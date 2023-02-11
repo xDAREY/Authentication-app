@@ -10,4 +10,14 @@
     <string name="create_account">create account</string>
     <string name="Login">LOGIN</string>
     <string name="forgot">forgot password?</string>
+    <string name="proceed">DONE</string>
+    <string name="email">Email address</string>
+    <string name="PhoneNo">Phone Number</string>
+    <string name="Password">Password</string>
+    <string name="RePassword">Confirm Password</string>
+    <string name="header">Create an account</string>
+    <string name="paragraph">Please enter your information below</string>
+    <string name="paragraph2">to create an account</string>
+    <string name="hintEmail">enter your email</string>
+    <string name="hintPhoneNo">enter your phone number</string>
 </resources>
