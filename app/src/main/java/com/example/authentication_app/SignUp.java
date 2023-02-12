@@ -33,9 +33,9 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(SignUp.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else {
                     if (password.equals(confirmPass)) {
-                        Boolean checkUserEmail = DbCon.checkEmail(username);
+                        Boolean checkUsername = DbCon.checkUsername(username);
 
-                        if (checkUserEmail == false) {
+                        if (checkUsername == false) {
                             Boolean insert = DbCon.insertData(username, password);
 
                             if (insert == true) {

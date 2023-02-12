@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
                 if (username.equals("") || password.equals(""))
                     Toast.makeText(Login.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else {
-                    Boolean checkDetails = dataBaseCon.checkEmailPassword(username, password);
+                    Boolean checkDetails = dataBaseCon.checkUsernamePassword(username, password);
 
                     if (checkDetails == true){
                         Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
