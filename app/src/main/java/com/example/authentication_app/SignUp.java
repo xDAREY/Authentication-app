@@ -25,18 +25,18 @@ public class SignUp extends AppCompatActivity {
         binding.signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = binding.hintEmail.getText().toString();
+                String username = binding.hintUsername.getText().toString();
                 String password = binding.inputPassword.getEditText().getText().toString();
                 String confirmPass = binding.inputRePassword.getEditText().getText().toString();
 
-                if (email.equals("") || password.equals("") || confirmPass.equals(""))
+                if (username.equals("") || password.equals("") || confirmPass.equals(""))
                     Toast.makeText(SignUp.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else {
                     if (password.equals(confirmPass)) {
-                        Boolean checkUserEmail = DbCon.checkEmail(email);
+                        Boolean checkUserEmail = DbCon.checkEmail(username);
 
                         if (checkUserEmail == false) {
-                            Boolean insert = DbCon.insertData(email, password);
+                            Boolean insert = DbCon.insertData(username, password);
 
                             if (insert == true) {
                                 Toast.makeText(SignUp.this, "Account was created successfully", Toast.LENGTH_SHORT).show();
@@ -62,10 +62,5 @@ public class SignUp extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 }
