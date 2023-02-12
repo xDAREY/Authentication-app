@@ -18,6 +18,7 @@
     <string name="header">Create an account</string>
     <string name="paragraph">Please enter your information below</string>
     <string name="paragraph2">to create an account</string>
+    <string name="createAccount">Don\'t have an account? create account</string>
     <string name="hintEmail">enter your email</string>
     <string name="hintPhoneNo">enter your phone number</string>
     <string name="greeting1">Hi there!</string>

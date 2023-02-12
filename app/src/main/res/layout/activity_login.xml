@@ -137,26 +137,14 @@
             android:layout_centerHorizontal="true">
 
             <TextView
+                android:id="@+id/signUpRedirect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/don_t_have_an_account"
+                android:text="@string/createAccount"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="-40dp" />
 
-
-<!--            <androidx.legacy.widget.Space-->
-<!--                android:layout_width="5dp"-->
-<!--                android:layout_height="1dp" />-->
-
-            <TextView
-                android:id="@+id/createAccTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:textColor="#FF1100"
-                android:text="@string/create_account" />
 
         </LinearLayout>
 

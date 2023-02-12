@@ -5,18 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".SignUp"
+    android:padding="15dp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="5dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout"
@@ -216,6 +207,19 @@
                     android:paddingVertical="2dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/redirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have account? Login"
+                android:layout_marginBottom="-30dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/inputRePassword"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
 
             <Button
                 android:id="@+id/signupButton"
@@ -226,13 +230,12 @@
                 android:text="@string/proceed"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/inputRePassword"
+                app:layout_constraintBottom_toBottomOf="@id/redirectText"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
